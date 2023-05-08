@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 74px 5%;
+}
+.lt {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  background-color: #efefef;
+  border-radius: 8px;
+  box-shadow: 4px 9px 8px -2px #888888;
+  margin: 2px 6px;
+  padding: 2% 3%;
+}
+.rt {
+  width: 45%;
+}
+.rt h1 {
+  padding: 10px;
+  background: #e2e2e2;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid black;
+}
+.rt textarea {
+  width: 100%;
+  border: 0px;
+  font-size: 28px;
+  padding: 20px;
+  font-weight: 800;
+}
+.lt-up {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lt-dwn {
+  margin: 20px 0;
+  flex-wrap: nowrap;
+}
+/* list items styling */
+.todo-list-item {
+  padding: 15px 8px;
+  list-style-type: none;
+  border-bottom: 1px solid black;
+}
+/* input tag  */
+.editText {
+  margin-left: 15px;
+  height: 20px;
+  font-size: 16px;
+  padding: 3px;
+  background: none;
+  border: none;
+}
+
+.show:focus {
+  color: white;
+  background: #0a0a0a;
+  border: 1px solid black;
+  border-radius: 3px;
+  outline: none;
+}
+
+.check {
+  text-decoration: line-through black 2px;
+  opacity: 0.5;
+}
+
+/* span items */
+.btns {
+  float: right;
+}
+
+.btns i,
+.btns input {
+  margin-right: 10px;
+}
+
+.btns input[type="checkbox"] {
+  accent-color: #888888;
+}
+
+/* right side text area */
+textarea:focus {
+  outline: none;
+}
+
+@media (max-width: 730px) {
+  .lt,
+  .rt {
+    width: 98%;
+  }
+  .container {
+    display: block;
+    width: 84%;
+  }
+}
